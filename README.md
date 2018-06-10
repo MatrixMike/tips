@@ -11,8 +11,9 @@ git commit --allow-empty -m "Empty."
 git add -A
 git commit -m "First commit on my local."
 git remote add github git@github.com:cooluser/coolrepo.git
+git fetch github
 git branch --set-upstream-to=github/master master
 git pull --rebase --allow-unrelated-histories
-git push -u github
+git push
 ```
 
